@@ -26,7 +26,7 @@ Io=(Iscn + Ki * (T - Tn)) / (-1.0 + np.exp((Vocn + Kv * (T-Tn)) / (Vt * a)))
 
 #CALCULATION WITH  VOLTAGE VALUE BASED ON RESISTOR VALUE
 Rl=10     #ADDED [Rl= Load Resistance]
-V =Rl*1   #ADDED. [V= Voltage across resistor]
+V =Rl*1   #ADDED. [V=R_load*I= Voltage across resistor] and assume that the current I=1 A.
 x=V+Rs*1  #FIRST, I use "x" to subtite the term (V+Rs*I) and assume that the current I=1 A. 
 #EQUATION
 Ipv=0.001*(Ipvn+Ki*(T - Tn))*G
